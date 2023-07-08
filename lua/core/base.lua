@@ -2,6 +2,8 @@
 vim.cmd('syntax on')
 vim.cmd('set termguicolors')
 vim.cmd('filetype plugin indent on')
+-- env
+vim.env.LANG = "en_US.UTF-8"
 -- mapleader
 vim.g.mapleader = ','
 -- utf8
