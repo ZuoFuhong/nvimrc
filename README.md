@@ -2,11 +2,12 @@
 
 ### 0x00 前期安装
 前期需要安装的工具, 最新的`neovim`, ~~`Packer`,~~ `ctags`, ~~`ripgrep`~~ ... 
-* ~~Packer 插件管理工具的安装~~
+
+```shell
+brew install neovim
+brew install universal-ctags
 ```
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\\n ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-* ~~ripgrep 是`fuzzy finder`依赖~~
+
 * 插件管理使用`Lazy.nvim`管理
 
 ### 0x01 快捷键映射
@@ -31,6 +32,16 @@ v = 可视模式
 | n `<leader>ff`       | 搜索文件      | 
 | n `<leader>gt`  | Go Test执行，如果光标在Test函数名上就只执行特定的函数 |
 
+常用快捷键:
+
+```
+## 快捷键
+ctrl + o 回退
+ctrl + i 前进
+
+## 命令
+:qa      退出全部
+```
 
 ### 0x02 Lua文件
 配置文件通过lua文件来管理。core是一些核心模块，configs主要是插件配置相关。
@@ -45,6 +56,15 @@ v = 可视模式
 * `configs/search.lua` 搜索相关的配置，使用了插件`telescope.nvim`
 * `configs/treesitter.lua` 代码语法高亮相关的插件，配置常用的语言
 * `configs/vscode.lua` 使用vscode主题，配置了背景透明
+
+### 0x03 参考文档
+
+* https://neovim.io/
+* https://www.lazyvim.org/
+* https://codeium.com/
+* https://github.com/preservim/nerdtree
+* https://www.jetbrains.com/lp/mono
+* https://github.com/universal-ctags/ctags
 
 ### 0xff Enjoy it
 
