@@ -18,8 +18,9 @@ v = 可视模式
 
 | 命令       | 功能                 |
 | ---------- | -------------------- |
-| i `<C-g>`  | 退出编辑      |
-| n `<C-n>`  | 打开/关闭NERDTree  |
+| i `<C-g>`  | 退出编辑             |
+| n `<C-n>`  | 打开/关闭NERDTree    |
+| n `<C-\>`  | 打开 toggleterm 终端 |
 | n `<leader>tt` | 打开/关闭Tagbar window |
 | v `<leader>yy` | visual模式下，选中内容复制到粘贴板|
 | v `<leader>xx` | visual模式下，选中内容剪切到粘贴板|
