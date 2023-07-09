@@ -4,6 +4,8 @@ vim.cmd('set termguicolors')
 vim.cmd('filetype plugin indent on')
 -- env
 vim.env.LANG = "en_US.UTF-8"
+-- disable perl provider
+vim.g.loaded_perl_provider = 0
 -- mapleader
 vim.g.mapleader = ','
 -- utf8
@@ -95,6 +97,7 @@ require('core.lazy')
 require('core.gui')
 require('core.keymaps')
 require('core.theme')
+require('core.toggleterm')
 require('configs.vscode').config()
 
 -- treesitter

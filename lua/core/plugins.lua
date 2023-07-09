@@ -58,4 +58,6 @@ return {
             vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
         end
     },
+    -- 终端
+    { 'akinsho/toggleterm.nvim' }
 }
