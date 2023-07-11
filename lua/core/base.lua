@@ -5,7 +5,7 @@ vim.cmd('filetype plugin indent on')
 -- env
 vim.env.LANG = "en_US.UTF-8"
 -- NERD tree
-vim.g.NERDTreeWinSize = 45
+vim.g.NERDTreeWinSize = 40
 -- disable perl provider
 vim.g.loaded_perl_provider = 0
 -- mapleader
