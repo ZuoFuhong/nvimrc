@@ -7,7 +7,7 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- basic
-map('i', '<C-g>', '<esc>')
+map('i', '<C-[>', '<esc>')
 
 -- Toggle NERDTree sidebar
 map('n', "<C-n>", ":NERDTreeToggle<CR>")
@@ -32,3 +32,6 @@ map('n', "<leader>w\\", ":vs<CR>")
 -- vim-go
 map('n', 'gr', '<Plug>(go-referrers)')
 map('n', '<leader>gt', '<cmd>lua require("configs.go_test").run_test()<CR>')
+
+-- toggleterm
+map('t', '<Esc>', [[<C-\><C-n>]])

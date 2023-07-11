@@ -1,4 +1,5 @@
 require("toggleterm").setup({
+    size = 15,
     open_mapping = [[<c-\>]],
     -- 打开新终端后自动进入插入模式
     start_in_insert = true,
