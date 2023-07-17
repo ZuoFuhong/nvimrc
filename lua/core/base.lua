@@ -8,6 +8,8 @@ vim.env.LANG = "en_US.UTF-8"
 vim.g.copilot_assume_mapped = true
 -- NERD tree
 vim.g.NERDTreeWinSize = 40
+vim.g.NERDTreeShowHidden = 1
+vim.g.NERDTreeIgnore = {'.git$', '.vscode$', '.idea$', '.DS_Store$'}
 -- disable perl provider
 vim.g.loaded_perl_provider = 0
 -- mapleader

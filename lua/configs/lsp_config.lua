@@ -68,7 +68,11 @@ nvim_lsp.gopls.setup{
 -- clang
 nvim_lsp.clangd.setup({
     capabilities = capabilities,
-    on_attach = on_attach
+    on_attach = on_attach,
+    cmd = {
+        "clangd",
+        "--offset-encoding=utf-16",
+    },
 })
 
 -- bash
