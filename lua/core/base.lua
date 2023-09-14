@@ -7,7 +7,7 @@ vim.env.LANG = "en_US.UTF-8"
 -- github copilot
 vim.g.copilot_assume_mapped = true
 -- NERD tree
-vim.g.NERDTreeWinSize = 40
+vim.g.NERDTreeWinSize = 35
 vim.g.NERDTreeShowHidden = 1
 vim.g.NERDTreeIgnore = {'.git$', '.vscode$', '.idea$', '.DS_Store$'}
 -- disable perl provider
@@ -20,9 +20,9 @@ vim.o.fileencoding = "utf-8"
 -- line number
 vim.o.number         = true
 vim.o.relativenumber = false
--- hjkl 移动时光标周围保留8行
-vim.o.scrolloff = 8
-vim.o.sidescrolloff = 8
+-- hjkl 移动时光标周围保留12行
+vim.o.scrolloff = 12
+vim.o.sidescrolloff = 12
 -- 高亮所在行
 vim.o.cursorline     = true
 vim.o.termguicolors  = true
