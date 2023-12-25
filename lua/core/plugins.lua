@@ -38,9 +38,6 @@ return {
     -- Rust
     { 'simrat39/rust-tools.nvim' },
 
-    -- Copilot
-    { 'github/copilot.vim' },
-
     -- search
     {
         'nvim-telescope/telescope.nvim',
