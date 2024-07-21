@@ -73,6 +73,7 @@ nvim_lsp.clangd.setup({
         "clangd",
         "--offset-encoding=utf-16",
     },
+    filetypes = { "c", "cpp" }
 })
 
 -- bash
