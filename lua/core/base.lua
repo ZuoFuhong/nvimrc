@@ -8,8 +8,11 @@ vim.env.LANG = "en_US.UTF-8"
 vim.g.NERDTreeWinSize = 35
 vim.g.NERDTreeShowHidden = 1
 vim.g.NERDTreeIgnore = {'.git$', '.vscode$', '.idea$', '.DS_Store$'}
--- disable perl provider
+-- disable provider
 vim.g.loaded_perl_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_ruby_provider = 0
 -- mapleader
 vim.g.mapleader = ','
 -- utf8
