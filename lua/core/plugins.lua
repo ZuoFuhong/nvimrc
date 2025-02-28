@@ -49,5 +49,20 @@ return {
     { 'tpope/vim-vinegar' },
 
     -- 终端
-    { 'akinsho/toggleterm.nvim' }
+    { 'akinsho/toggleterm.nvim' },
+
+    -- 编码助手
+    {
+        'yetone/avante.nvim',
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "stevearc/dressing.nvim",
+            "nvim-lua/plenary.nvim",
+            "MunifTanjim/nui.nvim",
+            --- The below dependencies are optional,
+            "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
+            "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
+            "zbirenbaum/copilot.lua", -- for providers='copilot'
+        }
+    }
 }

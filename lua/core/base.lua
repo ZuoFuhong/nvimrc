@@ -104,6 +104,8 @@ require('core.theme')
 require('core.toggleterm')
 require('configs.vscode').config()
 
+-- avante
+require('configs.avante').config()
 -- treesitter
 require('configs.treesitter').config()
 -- cmp
