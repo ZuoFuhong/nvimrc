@@ -1,11 +1,14 @@
 ## neovim配置文件
 
 ### 0x00 前期安装
-前期需要安装的工具, 最新的`neovim`, ~~`Packer`,~~ `ctags`, ~~`ripgrep`~~ ... 
 
 ```shell
+# macOS
 brew install neovim
 brew install universal-ctags
+
+# linux
+yum install ripgrep fzf cmake clang-devel
 ```
 
 * 插件管理使用`Lazy.nvim`管理
@@ -16,27 +19,29 @@ i = 插入(编辑)模式
 n = 普通模式
 v = 可视模式
 
-| 命令       | 功能                 |
-| ---------- | -------------------- |
-| i `<C-g>`  | 退出编辑             |
-| n `<C-n>`  | 打开/关闭NERDTree    |
-| n `<C-\>`  | 打开 toggleterm 终端 |
-| n `<leader>tt` | 打开/关闭Tagbar window |
-| v `<leader>yy` | visual模式下，选中内容复制到粘贴板|
-| v `<leader>xx` | visual模式下，选中内容剪切到粘贴板|
-| n `<leader><space>` | 关闭高亮 |
-| n `<leader>g?`  | 查看git blame |
-| n `<leader>gdf` | 查看git diff  |
-| n `<leader>w-`  | 水平分屏      | 
-| n `<leader>w\\` | 竖直分屏      | 
-| n `<leader>fg`       | live_grep    |
-| n `<leader>ff`       | 搜索文件      | 
-| n `<leader>gt`  | Go Test执行，如果光标在Test函数名上就只执行特定的函数 |
+| Commands            | Feature                          |
+| ------------------- | -------------------------------- |
+| i `<C-g>`           | 退出编辑                          |
+| n `<C-n>`           | 打开/关闭NERDTree                 |
+| n `<C-\>`           | 打开 toggleterm 终端              |
+| n `<leader>tt`      | 打开/关闭Tagbar window            |
+| v `<leader>yy`      | visual模式下，选中内容复制到粘贴板   |
+| v `<leader>xx`      | visual模式下，选中内容剪切到粘贴板   |
+| n `<leader><space>` | 关闭高亮                         |
+| n `<leader>g?`      | 查看git blame                    |
+| n `<leader>gdf`     | 查看git diff                     |
+| n `<leader>w-`      | 水平分屏                         | 
+| n `<leader>w\\`     | 竖直分屏                         | 
+| n `<leader>fg`      | live_grep                       |
+| n `<leader>ff`      | 搜索文件                         | 
+| n `<leader>gt`      | Go Test执行，如果光标在Test函数名上就只执行特定的函数 |
 
 常用快捷键:
 
 ```
 ## 快捷键
+ctrl + w + h 左切焦点
+ctrl + w + l 右切焦点
 ctrl + o 回退
 ctrl + i 前进
 v + e    选中单词
@@ -86,6 +91,3 @@ C   设置项目根目录
 * https://github.com/preservim/nerdtree
 * https://www.jetbrains.com/lp/mono
 * https://github.com/universal-ctags/ctags
-
-### 0xff Enjoy it
-
